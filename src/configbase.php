@@ -9,7 +9,7 @@ function host () {
     return  "localhost";
 }
 function db () {
-    return  "exocours";
+    return  "chaussette_vote";
 }
 
 ?>
