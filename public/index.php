@@ -1,3 +1,4 @@
+<!--Document -->
 <?php
 /**
  * Created by PhpStorm.
@@ -10,7 +11,7 @@ use gregwar\image;
 ?>
 <html>
 
-    <!--Document -->
+
     <head>
         <title>Mon projet de cours</title>
     </head>
