@@ -1,0 +1,7 @@
+{
+    "name": "wildhack/damien_cedric",
+    "description": "projet appli vote chaussettes",
+    "require": {
+        "gregwar/image": "^2.0"
+    }
+}
