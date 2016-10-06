@@ -1,0 +1,22 @@
+body{
+	background-color: #012;
+}
+
+h1{
+	color: #FFF;
+	font-family: "Comic Sans MS", sans-serif;
+}
+
+#video, #image{
+	border: 2px solid #FFF;
+}
+
+#snap,#snap_black_white,#send_snap,#snap_inverse{
+	background-color: #ccc;
+	color: maroon;
+	font-weight: bolder;
+	padding: 10px;
+	border: none;
+	cursor: pointer;
+	border-radius: 5px;
+}
