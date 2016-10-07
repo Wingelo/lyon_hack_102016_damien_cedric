@@ -9,7 +9,7 @@
 include("bdd.php");
 
 $connection = GetConnection();
-print_r($connection);
+
 $lastName = $_POST['lastName'];
 $firstName = $_POST['firstName'];
 
