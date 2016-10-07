@@ -16,7 +16,7 @@ if (count($_POST) == 0) {
     $urlImage = $_POST['urlImage'];
 
     $result = ExecSql($connection,"Select 1 from chaussettes where nom = '$lastName' and prenom = '$first'");
-    if ($user = $connection->fetch_assoc()) {
+    if ($user = $result>fetch_assoc()) {
         $query = "update user set url_chaussette = '$urlImage' " ;
         $query .= "where nom = '$lastname' and prenom = '$firstName')";
 

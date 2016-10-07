@@ -13,6 +13,8 @@ use gregwar\image;
 
 
     <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style_photo.css">
         <title>Mon projet de cours</title>
     </head>
 
@@ -20,33 +22,27 @@ use gregwar\image;
     </header>
     <body>
         <h1>Mon projet de cours</h1>
-        <table>
-            <tr>
-                <th>ID</th>
-                <th>Nom</th>
-                <th>Prénom</th>
-                <th>chaussette</th>
-            </tr><?php
-            include "../src/bdd.php";
-            $connection = GetConnection();
-            $liste = ExecSql($connection, "select id, nom, prenom, url_chaussette from chaussettes order by id desc limit 1;");
-            while ($user = $liste->fetch_assoc()) { ?><tr>
-                    <td><?php echo $user['id']; ?></td>
-                    <td><?php echo $user['nom']; ?></td>
-                    <td><?php echo $user['prenom']; ?></td>
-                    <td><img src="<?php echo $user['url_chaussette']; ?>" alt="<?php echo $user['prenom']; ?>"</img></td>
-                </tr><?php } ?>
-        </table>
-        <br/>
-        <br/>
-        <form name="contact" action="../src/form.php" method="post">
+
             Nom :
-            <input type="text" value="" name="lastName"/>
+        <input type="text" value="" name="lastName" id="lastName"/>
             <br/>
             Prénom :
-            <input type="text" value="" name="firstName"/>
-            <br/>
-            <input type="submit"/>
-        </form>
+        <input type="text" value="" name="firstName" id="firstName"/>
+            <br/>           -->
+        <h1>CAPTURE VIDEO</h1>
+        <video id="video" width="640" height="480" autoplay></video>
+        <canvas id="canvas" width="640" height="480" style="display:none;"></canvas>
+        <img id="image" src="" alt="" width="640" height="480" />
+
+        <br/>
+
+        <button id="snap">Prendre une photo</button>
+        <button id="send_snap">Envoyer sur le serveur</button>
+
+        <script src="js/jquery-1.11.0.min.js"></script>
+        <script src="js/take_picture.js"></script>
+
+           <input type="submit"/>
+
     </body>
 </html>

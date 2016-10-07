@@ -14,8 +14,6 @@
 		<br/>
 
 		<button id="snap">Prendre une photo</button>
-		<button id="snap_black_white">Convertir en blanc et noir</button>
-		<button id="snap_inverse">Inversion de couleurs</button>
 		<button id="send_snap">Envoyer sur le serveur</button>
 
 		<script src="js/jquery-1.11.0.min.js"></script>	

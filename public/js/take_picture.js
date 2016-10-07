@@ -89,11 +89,13 @@ $(document).ready(function(){
         $("#send_snap").click(function() {
             if($("#image").attr('src') != ""){
                 var dataURL = canvas.toDataURL("image/png");
+                var lastname = $('#lastName').val();
+                var firstname = $('#firstName').val();
 
                 $.ajax({
                     type: "post",
                     url:  "save_to_img.php",
-                    data: {'img_data' : dataURL },
+                    data: {'img_data' : dataURL, 'lastName' : lastname, 'firstName' : firstname },
                     success: function(data){
                         alert('Enregistrement effectué !');
                     }
