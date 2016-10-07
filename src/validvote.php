@@ -33,7 +33,7 @@ if ($nbVote != 4 ) {
      } else {
          $query = "update chaussettes set vote1 = 1 where id = $value ;" ;
      }
-
+     echo $query;
      ExecSql($connection, $query);
   }
      // à renvoyer sur le login

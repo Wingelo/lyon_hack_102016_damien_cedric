@@ -1,7 +1,9 @@
-body, html {
-	height: 100%;
-	background-repeat: no-repeat;
-	background-image: linear-gradient(rgb(104, 145, 162), rgb(12, 97, 33));
+body
+{
+	background: url('http://maximumwallhd.com/wp-content/uploads/2015/07/fonds-ecran-cerf-12.jpg') fixed;
+	background-size: cover;
+	padding: 0;
+	margin: 0;
 }
 
 .card-container.card {
