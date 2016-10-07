@@ -34,7 +34,7 @@
                 <?php }
                 echo '<input type="hidden" name="id" value ="' . $_GET['id'] . '"/>'; ?>
             </div>
-            <button type="submit" class="btn btn-default">Submit</button>
+            <button type="submit" class="btn btn-default">Envoyez vos votes</button>
 
 
         </form>
