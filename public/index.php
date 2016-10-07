@@ -14,25 +14,25 @@ use gregwar\image;
 
     <head>
         <meta charset="utf-8">
-        <link rel="stylesheet" href="style_photo.css">
-        <title>Mon projet de cours</title>
+        <link rel="stylesheet" href="css/style_photo.css">
+        <title>Formulaire : Concours de chaussette</title>
     </head>
 
     <header>
     </header>
     <body>
-        <h1>Mon projet de cours</h1>
+        <h1>Formulaire : Concours de chaussette</h1>
 
-            Nom :
+            <p>Nom :</p>
         <input type="text" value="" name="lastName" id="lastName"/>
             <br/>
-            Prénom :
+            <p>Prénom :</p>
         <input type="text" value="" name="firstName" id="firstName"/>
-            <br/>           -->
+            <br/>
         <h1>CAPTURE VIDEO</h1>
-        <video id="video" width="640" height="480" autoplay></video>
+        <video id="video" width="320" height="240" autoplay></video>
         <canvas id="canvas" width="640" height="480" style="display:none;"></canvas>
-        <img id="image" src="" alt="" width="640" height="480" />
+        <img id="image" src="" alt="" width="320" height="240" />
 
         <br/>
 
@@ -42,7 +42,6 @@ use gregwar\image;
         <script src="js/jquery-1.11.0.min.js"></script>
         <script src="js/take_picture.js"></script>
 
-           <input type="submit"/>
 
     </body>
 </html>
