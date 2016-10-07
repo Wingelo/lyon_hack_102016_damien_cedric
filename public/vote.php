@@ -18,16 +18,24 @@
     </header>
     <body>
         <h1>Mon projet de cours</h1>
+        <?php
+        if (count($_GET) != 1) {
+            echo '<h2 class="red"> Il faut <strong>3</strong> votes. </h2>';
+        }
+        ?>
         <form name="vote" action="../src/validvote.php" method="post">
 
                 <?php
                 include "../src/bdd.php";
                 $connection = GetConnection();
-                $liste = ExecSql($connection, "select id, url_chaussette from chaussettes order by id desc limit 1;");
-                /*while ($user = $liste->fetch_assoc()) {*/ ?>
+                $index = 0;
 
-                   <input type="checkbox" value="1" name="vote1" />
-                   <input type="checkbox" value="2" name="vote2" />
+                $liste = ExecSql($connection, "select id, url_chaussette from chaussettes;");
+                while ($user = $liste->fetch_assoc()) { ?>
+            <img src="<?php echo $user['url_chaussette']?>" alt="<?php echo $user['id']?>" />
+            <input type="checkbox" value="<?php echo $user['id']?>" name="vote<?php echo $user['id']?>" />
+                <?php }
+            echo '<input type="hidden" name="id" value ="' . $_GET['id'] .'"/>';  ?>
             <input type="submit"/>
 
         </form>
